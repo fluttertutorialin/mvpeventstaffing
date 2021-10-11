@@ -42,7 +42,6 @@ class ApprovePendingProfilePage extends StatelessWidget {
                       textAlign: TextAlign.center)),
               SizedBox(height: Get.width / 12),
 
-
               InkWell(
                   onTap: () {
                     Get.offAllNamed(loginRoute);
