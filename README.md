@@ -2,7 +2,7 @@
 
 <h3 align="center">
     <br> 
-    MVP EVENT STAFFING application provider different types of events. 
+    MVP EVENT STAFFING application provider different types of events likes Staffing Stadiums, Music Festivals, Concerts, and Sporting Events Nationwide.
 </h3>
 
 # Website
