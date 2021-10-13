@@ -65,6 +65,7 @@ const String homeTitleString = 'Home';
 const String eventsTitleString = 'Events';
 const String accountTitleString = 'Account';
 const String notificationTitleString  = 'Notification';
+const String profileEditTitleString  = 'Profile Edit';
 
 const String loginButtonString = 'Login';
 const String signUpButtonString  = 'Sign Up';
@@ -78,6 +79,7 @@ const String saveAndContinueButtonString = 'Save and Continue';
 const String yesButtonString = 'Yes';
 const String noButtonString = 'No';
 const String updateProfileButtonString = 'Update Profile';
+const String updateButtonString = 'Update';
 
 const String emailHintString = 'Email';
 const String passwordHintString = 'Password';
@@ -95,6 +97,8 @@ const String chooseFileHintString = 'choose file';
 const String searchHintString = 'Search Event';
 const String addressHintString = 'Address';
 const String stateHintString = 'State';
+const String currentPasswordHintString = 'Current Password';
+const String newPasswordHintString = 'New Password';
 
 const String homeBottomMenu = 'Home';
 const String eventsBottomMenu = 'Events';

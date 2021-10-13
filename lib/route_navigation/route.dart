@@ -15,3 +15,5 @@ const String stepLocationShareRoute = '/stepLocationShare';
 
 const String bottomNavigationRoute = '/home';
 const String notificationRoute = '/notification';
+const String profileEditRoute = '/profileEdit';
+const String profileJobSettingRoute = '/ProfileJobSettingPage';

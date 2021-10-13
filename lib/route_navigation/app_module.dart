@@ -26,20 +26,35 @@ abstract class AppPage {
         name: verifyOtpRoute,
         binding: OtpBinding(),
         page: () => const OtpPage()),
-    GetPage(name: approvedProfileRoute, page: () => const ApprovedProfilePage()),
-    GetPage(name: approvePendingProfileRoute, page: () => const ApprovePendingProfilePage()),
+    GetPage(
+        name: approvedProfileRoute, page: () => const ApprovedProfilePage()),
+    GetPage(
+        name: approvePendingProfileRoute,
+        page: () => const ApprovePendingProfilePage()),
     GetPage(name: otpSuccessRoute, page: () => const OtpSuccessPage()),
-
-    GetPage(name: stepBasicDetailRoute, page: () => const StepBasicDetailPage()),
-    GetPage(name: stepContactDetailRoute, page: () => const StepContactDetailPage()),
+    GetPage(
+        name: stepBasicDetailRoute, page: () => const StepBasicDetailPage()),
+    GetPage(
+        name: stepContactDetailRoute,
+        page: () => const StepContactDetailPage()),
     GetPage(name: stepJobSettingsRoute, page: () => const StepJobSettingPage()),
-    GetPage(name: stepUploadDocumentRoute, page: () => const StepUploadDocumentPage()),
-    GetPage(name: stepLocationShareRoute, page: () => const StepLocationSharePage()),
-
+    GetPage(
+        name: stepUploadDocumentRoute,
+        page: () => const StepUploadDocumentPage()),
+    GetPage(
+        name: stepLocationShareRoute,
+        page: () => const StepLocationSharePage()),
     GetPage(name: notificationRoute, page: () => const NotificationPage()),
-
-    GetPage(name: bottomNavigationRoute,
+    GetPage(
+        name: bottomNavigationRoute,
         binding: BottomNavigationBinding(),
         page: () => const BottomNavigationPage()),
+    GetPage(
+        name: profileEditRoute,
+        binding: ProfileEditBinding(),
+        page: () => const ProfileEditPage()),
+
+    GetPage(name: profileJobSettingRoute, page: () => const ProfileJobSettingPage()),
+
   ];
 }

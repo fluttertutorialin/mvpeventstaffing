@@ -60,18 +60,27 @@ class AccountPage extends StatelessWidget {
                                       color: whiteColor,
                                       fontSize: 18,
                                       fontWeight: FontWeight.w600))),
-                          Text('kamal.lakhani56@gmail.com',
-                              style: Get.textTheme.headline1!.merge(
-                                  const TextStyle(
-                                      color: whiteColor,
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w600)))
+                          InkWell(
+                              child: Padding(
+                                  padding:
+                                      const EdgeInsets.all(5),
+                                  child: Text('Profile Edit',
+                                      style: Get.textTheme.headline1!.merge(
+                                          const TextStyle(
+                                              color: primarySwatchColor                           ,
+                                              fontSize: 14,
+                                              fontWeight: FontWeight.w600)))),
+                              onTap: () {
+                                Get.toNamed(profileEditRoute);
+                              })
                         ]))
                   ])),
               const SizedBox(height: 25),
               _menuWidget(name: 'My Calendar'),
               const SizedBox(height: 10),
-              _menuWidget(name: 'My Job Preferences'),
+              _menuWidget(name: 'My Job Preferences', onPress: (){
+                Get.toNamed(profileJobSettingRoute);
+              }),
               const SizedBox(height: 10),
               _menuWidget(name: 'My Venues'),
               const SizedBox(height: 10),
