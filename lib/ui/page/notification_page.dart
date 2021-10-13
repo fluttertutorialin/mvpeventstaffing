@@ -31,9 +31,7 @@ class NotificationPage extends StatelessWidget {
                           Container(
                                padding: const EdgeInsets.all(10),
                               color: boxColor,
-                              child: Padding(
-                                  padding: const EdgeInsets.all(15),
-                                  child: Column(children: [
+                              child: Column(children: [
                                     Row(children: [
                                       Text('You have been accepted',
                                           style: Get.textTheme.bodyText2!.merge(
@@ -54,7 +52,7 @@ class NotificationPage extends StatelessWidget {
                                             const TextStyle(
                                                 color: greyColor,
                                                 fontSize: 14)))
-                                  ])))
+                                  ]))
                         ]));
                       }))
             ])));
