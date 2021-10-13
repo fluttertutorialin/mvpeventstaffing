@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:mvpeventstaffing/ui/component/text_field_component.dart';
 import '../../../route_navigation/route.dart';
 import '../../widget/custom_switch.dart';
 import '../../../resource/app_color.dart';
@@ -49,23 +50,32 @@ class StepLocationSharePage extends StatelessWidget {
                           color: boxColor,
                           child: Column(children: [
                             Row(children: [
-                                Text(locationShareStep,
-                                      style: Get.textTheme.headline1!.merge(
-                                          const TextStyle(
-                                              color: whiteColor,
-                                              fontSize: 15,
-                                              fontWeight: FontWeight.w600))),
+                              Text(locationShareStep,
+                                  style: Get.textTheme.headline1!.merge(
+                                      const TextStyle(
+                                          color: whiteColor,
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.w600))),
                               const Spacer(),
-                               CustomSwitch(
-                                      value: true, onChanged: (value) {})
+                              CustomSwitch(value: true, onChanged: (value) {})
                             ]),
-                             Text(enableLocationStep,
-                                    style: Get.textTheme.headline1!.merge(
-                                        const TextStyle(
-                                            color: greyColor,
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.w600)))
+                            Text(enableLocationStep,
+                                style: Get.textTheme.headline1!.merge(
+                                    const TextStyle(
+                                        color: greyColor,
+                                        fontSize: 13,
+                                        fontWeight: FontWeight.w600)))
                           ])),
+                      const SizedBox(height: 15),
+                      const TextFieldComponent(
+                          labelText: addressHintString,
+                          minLines: 5,
+                          maxLines: 5),
+                      const SizedBox(height: 15),
+                      const TextFieldComponent(
+                          labelText: stateHintString,
+                          enabled: false,
+                          suffixIcon: Icon(Icons.arrow_drop_down_circle_outlined)),
                       const SizedBox(height: 15),
                       InkWell(
                           onTap: () {

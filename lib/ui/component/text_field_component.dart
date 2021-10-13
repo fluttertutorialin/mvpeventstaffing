@@ -105,7 +105,7 @@ class TextFieldComponent extends StatelessWidget {
                     ? null
                     : SizedBox(width: 40, child: suffixIcon),
                 suffixIconConstraints: suffixIconConstraints ??
-                    const BoxConstraints(maxHeight: 16, maxWidth: 51)));
+                    const BoxConstraints(maxHeight: 22, maxWidth: 51)));
   }
 }
 

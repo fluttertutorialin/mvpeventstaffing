@@ -22,9 +22,9 @@ class OtpSuccessPage extends StatelessWidget {
                           color: whiteColor,
                           fontSize: 20,
                           fontWeight: FontWeight.w600)))),
-              SizedBox(height: Get.width / 2.5),
+              const SizedBox(height: 15),
               Image.asset(otpSuccessImage),
-              SizedBox(height: Get.width / 9),
+              const SizedBox(height: 15),
               Center(
                   child: Text(accountCreateSuccessString,
                       style: Get.textTheme.headline1!.merge(const TextStyle(
@@ -32,7 +32,7 @@ class OtpSuccessPage extends StatelessWidget {
                           fontSize: 18,
                           fontWeight: FontWeight.w600)),
                       textAlign: TextAlign.center)),
-              SizedBox(height: Get.width / 12),
+              const SizedBox(height: 15),
               Center(
                   child: Text(applicationAccessQuicklyString,
                       style: Get.textTheme.headline1!.merge(const TextStyle(
@@ -40,7 +40,7 @@ class OtpSuccessPage extends StatelessWidget {
                           fontSize: 15,
                           fontWeight: FontWeight.w600)),
                       textAlign: TextAlign.center)),
-              SizedBox(height: Get.width / 12),
+              const SizedBox(height: 25),
               InkWell(
                   onTap: () {
                     Get.toNamed(stepBasicDetailRoute);

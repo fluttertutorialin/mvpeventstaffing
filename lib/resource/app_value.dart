@@ -93,6 +93,8 @@ const String emergencyContactHintString = 'spouse, friend, etc.';
 const String emergencyContactPhoneHintStep = '(###) ###-####';
 const String chooseFileHintString = 'choose file';
 const String searchHintString = 'Search Event';
+const String addressHintString = 'Address';
+const String stateHintString = 'State';
 
 const String homeBottomMenu = 'Home';
 const String eventsBottomMenu = 'Events';
