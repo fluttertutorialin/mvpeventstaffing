@@ -59,7 +59,6 @@ class SignUpPage extends GetWidget<SignUpController> {
                             Get.toNamed(verifyOtpRoute);
                           },
                           child: Container(
-                              width: MediaQuery.of(context).size.width,
                               padding: const EdgeInsets.symmetric(vertical: 12),
                               alignment: Alignment.center,
                               decoration: BoxDecoration(

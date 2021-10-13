@@ -51,7 +51,6 @@ class ForgotPasswordPage extends GetWidget<ForgotPasswordController> {
                             Get.back();
                           },
                           child: Container(
-                              width: MediaQuery.of(context).size.width,
                               padding: const EdgeInsets.symmetric(vertical: 12),
                               alignment: Alignment.center,
                               decoration: BoxDecoration(

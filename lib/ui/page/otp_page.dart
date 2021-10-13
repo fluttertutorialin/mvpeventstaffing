@@ -64,7 +64,6 @@ class OtpPage extends GetView<OtpController> {
                         Get.toNamed(otpSuccessRoute);
                       },
                       child: Container(
-                          width: MediaQuery.of(context).size.width,
                           padding: const EdgeInsets.symmetric(vertical: 12),
                           alignment: Alignment.center,
                           decoration: BoxDecoration(
