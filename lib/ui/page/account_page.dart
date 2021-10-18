@@ -62,12 +62,11 @@ class AccountPage extends StatelessWidget {
                                       fontWeight: FontWeight.w600))),
                           InkWell(
                               child: Padding(
-                                  padding:
-                                      const EdgeInsets.all(5),
+                                  padding: const EdgeInsets.all(5),
                                   child: Text('Profile Edit',
                                       style: Get.textTheme.headline1!.merge(
                                           const TextStyle(
-                                              color: primarySwatchColor                           ,
+                                              color: primarySwatchColor,
                                               fontSize: 14,
                                               fontWeight: FontWeight.w600)))),
                               onTap: () {
@@ -76,11 +75,17 @@ class AccountPage extends StatelessWidget {
                         ]))
                   ])),
               const SizedBox(height: 25),
-              _menuWidget(name: 'My Calendar'),
+              _menuWidget(
+                  name: 'My Calendar',
+                  onPress: () {
+                    Get.toNamed(myCalendarRoute);
+                  }),
               const SizedBox(height: 10),
-              _menuWidget(name: 'My Job Preferences', onPress: (){
-                Get.toNamed(profileJobSettingRoute);
-              }),
+              _menuWidget(
+                  name: 'My Job Preferences',
+                  onPress: () {
+                    Get.toNamed(profileJobSettingRoute);
+                  }),
               const SizedBox(height: 10),
               _menuWidget(name: 'My Venues'),
               const SizedBox(height: 10),

@@ -57,5 +57,11 @@ abstract class AppPage {
     GetPage(name: profileJobSettingRoute, page: () => const ProfileJobSettingPage()),
 
     GetPage(name: eventDetailRoute, page: () => const EventDetailPage()),
+
+    GetPage(
+        name: myCalendarRoute,
+        binding: MyCalendarBinding(),
+        page: () => const MyCalendarPage()),
+
   ];
 }
