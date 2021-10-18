@@ -80,6 +80,7 @@ const String yesButtonString = 'Yes';
 const String noButtonString = 'No';
 const String updateProfileButtonString = 'Update Profile';
 const String updateButtonString = 'Update';
+const String updateMyAvailabilityButtonString = 'Update My Availability';
 
 const String emailHintString = 'Email';
 const String passwordHintString = 'Password';
@@ -99,6 +100,9 @@ const String addressHintString = 'Address';
 const String stateHintString = 'State';
 const String currentPasswordHintString = 'Current Password';
 const String newPasswordHintString = 'New Password';
+const String selectVenueHintString = 'Select venue';
+const String selectVenueCityHintString = 'Select city';
+const String selectVenueStateHintString = 'Select state';
 
 const String homeBottomMenu = 'Home';
 const String eventsBottomMenu = 'Events';

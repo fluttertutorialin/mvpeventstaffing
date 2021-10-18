@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../../resource/app_value.dart';
+import '../component/text_field_component.dart';
 import '../../resource/app_color.dart';
 
 class EventFilterPage extends StatelessWidget {
@@ -15,23 +17,15 @@ class EventFilterPage extends StatelessWidget {
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Row(children: [
-                        Center(
-                            child: Padding(
-                                padding: EdgeInsets.only(left: Get.width / 3),
-                                child: Text('Sort and Filter',
-                                    style: Get.textTheme.headline1!.merge(
-                                        const TextStyle(
-                                            color: whiteColor,
-                                            fontSize: 18,
-                                            fontWeight: FontWeight.w600))))),
-                        const Spacer(),
-                        IconButton(
-                            onPressed: () {
-                              Get.back();
-                            },
-                            icon: const Icon(Icons.cancel, color: greyColor))
-                      ]),
+                      Center(
+                          child: Padding(
+                              padding: const EdgeInsets.all(5),
+                              child: Text('Sort and Filter',
+                                  style: Get.textTheme.headline1!.merge(
+                                      const TextStyle(
+                                          color: whiteColor,
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.w600))))),
                       Container(
                           height: 1,
                           width: MediaQuery.of(context).size.width,
@@ -44,6 +38,8 @@ class EventFilterPage extends StatelessWidget {
                               fontWeight: FontWeight.w600))),
                       const SizedBox(height: 10),
                       Row(children: [
+                        const Icon(Icons.radio_button_off_outlined),
+                        const SizedBox(width: 8),
                         Text('Ascending',
                             style: Get.textTheme.headline1!.merge(
                                 const TextStyle(
@@ -51,6 +47,9 @@ class EventFilterPage extends StatelessWidget {
                                     fontSize: 14,
                                     fontWeight: FontWeight.w600))),
                         const SizedBox(width: 40),
+                        const Icon(Icons.radio_button_checked_outlined,
+                            color: primarySwatchColor),
+                        const SizedBox(width: 8),
                         Text('Descending',
                             style: Get.textTheme.headline1!.merge(
                                 const TextStyle(
@@ -58,26 +57,42 @@ class EventFilterPage extends StatelessWidget {
                                     fontSize: 14,
                                     fontWeight: FontWeight.w600)))
                       ]),
-                      const SizedBox(height: 10),
+                      const SizedBox(height: 20),
                       Text('Filter by Venue',
                           style: Get.textTheme.headline1!.merge(const TextStyle(
                               color: whiteColor,
                               fontSize: 14,
                               fontWeight: FontWeight.w600))),
                       const SizedBox(height: 10),
-                      const SizedBox(height: 10),
+                      const TextFieldComponent(
+                          labelText: selectVenueHintString,
+                          suffixIcon:
+                              Icon(Icons.arrow_drop_down_circle_outlined),
+                          enabled: false),
+                      const SizedBox(height: 15),
                       Text('Filter by City',
                           style: Get.textTheme.headline1!.merge(const TextStyle(
                               color: whiteColor,
                               fontSize: 15,
                               fontWeight: FontWeight.w600))),
                       const SizedBox(height: 10),
-                      const SizedBox(height: 10),
+                      const TextFieldComponent(
+                          labelText: selectVenueCityHintString,
+                          suffixIcon:
+                              Icon(Icons.arrow_drop_down_circle_outlined),
+                          enabled: false),
+                      const SizedBox(height: 15),
                       Text('Filter by State',
                           style: Get.textTheme.headline1!.merge(const TextStyle(
                               color: whiteColor,
                               fontSize: 14,
                               fontWeight: FontWeight.w600))),
+                      const SizedBox(height: 10),
+                      const TextFieldComponent(
+                          labelText: selectVenueStateHintString,
+                          suffixIcon:
+                              Icon(Icons.arrow_drop_down_circle_outlined),
+                          enabled: false),
                       const SizedBox(height: 10),
                     ]))));
   }

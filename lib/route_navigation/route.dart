@@ -17,3 +17,4 @@ const String bottomNavigationRoute = '/home';
 const String notificationRoute = '/notification';
 const String profileEditRoute = '/profileEdit';
 const String profileJobSettingRoute = '/ProfileJobSettingPage';
+const String eventDetailRoute = '/eventDetail';

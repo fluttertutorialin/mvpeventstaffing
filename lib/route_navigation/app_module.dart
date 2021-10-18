@@ -56,5 +56,6 @@ abstract class AppPage {
 
     GetPage(name: profileJobSettingRoute, page: () => const ProfileJobSettingPage()),
 
+    GetPage(name: eventDetailRoute, page: () => const EventDetailPage()),
   ];
 }

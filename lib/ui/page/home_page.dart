@@ -173,7 +173,9 @@ class HomePage extends StatelessWidget {
   _upcomingShiftsItemView() => Container(
       margin: const EdgeInsets.only(top: 10),
       child: GestureDetector(
-          onTap: () {},
+          onTap: () {
+            Get.toNamed(eventDetailRoute);
+          },
           child: Container(
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8), color: boxColor),
