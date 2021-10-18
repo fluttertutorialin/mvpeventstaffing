@@ -27,12 +27,15 @@ class MyCalendarPage extends GetView<MyCalendarController> {
               daysOfWeekStyle: const DaysOfWeekStyle(
                   weekdayStyle: TextStyle(color: primarySwatchColor),
                   weekendStyle: TextStyle(color: primarySwatchColor)),
-              calendarStyle: const CalendarStyle(
-                  todayTextStyle: TextStyle(
+              calendarStyle: CalendarStyle(
+                  markerDecoration: BoxDecoration(
+                      color: primarySwatchColor,
+                      borderRadius: BorderRadius.circular(12.0)),
+                  todayTextStyle: const TextStyle(
                       fontFamily: 'Poppins',
                       color: whiteColor,
                       fontWeight: FontWeight.normal),
-                  defaultTextStyle: TextStyle(
+                  defaultTextStyle: const TextStyle(
                       fontFamily: 'Poppins',
                       fontWeight: FontWeight.normal,
                       color: whiteColor)),
@@ -77,7 +80,8 @@ class MyCalendarPage extends GetView<MyCalendarController> {
           Expanded(
               child: SingleChildScrollView(
                   child: Padding(
-                      padding: const EdgeInsets.only(left: 12, right: 12, bottom: 12),
+                      padding: const EdgeInsets.only(
+                          left: 12, right: 12, bottom: 12),
                       child: ListView.builder(
                           shrinkWrap: true,
                           physics: const NeverScrollableScrollPhysics(),
