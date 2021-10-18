@@ -48,6 +48,9 @@ const String recommendedEvents = 'Recommended events';
 const String eventBestYourJob = 'Events that suits best for your job skills';
 const String upcomingShifts = 'Upcoming Shifts';
 const String yourUpcomingShifts = 'Your upcoming Shifts';
+const String writeNote = 'Write a note';
+const String updateMyAvailability = 'Update My Availability';
+const String updateMyAvailabilityNote = 'Check the boxes for the day(s) you can work. We will let you know if we have a spot for you! Click the star for your preferred event.';
 
 const String signUpTitleString  = 'Sign Up';
 const String verifyMobileTitleString  = 'Verify Mobile';
@@ -81,6 +84,7 @@ const String noButtonString = 'No';
 const String updateProfileButtonString = 'Update Profile';
 const String updateButtonString = 'Update';
 const String updateMyAvailabilityButtonString = 'Update My Availability';
+const String saveAvailabilityButtonString = 'Save Availability';
 
 const String emailHintString = 'Email';
 const String passwordHintString = 'Password';
