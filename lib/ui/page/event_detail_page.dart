@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mvpeventstaffing/ui/component/text_field_component.dart';
+import '../component/text_field_component.dart';
 import '../../resource/app_value.dart';
 import '../../resource/app_color.dart';
 

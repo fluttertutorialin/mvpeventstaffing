@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../resource/app_color.dart';
-import '../../resource/app_image.dart';
 import '../../route_navigation/route.dart';
 
 class EventUpcomingItemView extends StatelessWidget {
