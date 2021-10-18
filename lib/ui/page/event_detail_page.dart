@@ -37,7 +37,7 @@ class EventDetailPage extends StatelessWidget {
             child: Column(children: [
           Container(
               width: Get.width,
-              color: Colors.white.withOpacity(0.1),
+              color: boxColor,
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -98,7 +98,7 @@ class EventDetailPage extends StatelessWidget {
           const SizedBox(height: 20),
           Container(
               width: Get.width,
-              color: Colors.white.withOpacity(0.1),
+              color: boxColor,
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
