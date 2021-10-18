@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:intl/intl.dart';
-import 'package:mvpeventstaffing/route_navigation/route.dart';
 import 'package:table_calendar/table_calendar.dart';
 import '../../controller/import_collection_controller.dart';
 import '../../resource/app_color.dart';
+import '../../route_navigation/route.dart';
 
 class MyCalendarPage extends GetView<MyCalendarController> {
   const MyCalendarPage({Key? key}) : super(key: key);
@@ -24,38 +23,9 @@ class MyCalendarPage extends GetView<MyCalendarController> {
               firstDay: DateTime(2010),
               lastDay: DateTime(2030),
               onPageChanged: (selectedDay) {},
-              daysOfWeekStyle: const DaysOfWeekStyle(
-                  weekdayStyle: TextStyle(color: primarySwatchColor),
-                  weekendStyle: TextStyle(color: primarySwatchColor)),
-              calendarStyle: CalendarStyle(
-                  markerDecoration: BoxDecoration(
-                      color: primarySwatchColor,
-                      borderRadius: BorderRadius.circular(12.0)),
-                  todayTextStyle: const TextStyle(
-                      fontFamily: 'Poppins',
-                      color: whiteColor,
-                      fontWeight: FontWeight.normal),
-                  defaultTextStyle: const TextStyle(
-                      fontFamily: 'Poppins',
-                      fontWeight: FontWeight.normal,
-                      color: whiteColor)),
-              calendarBuilders: CalendarBuilders(
-                  selectedBuilder: (context, date, events) => Container(
-                      margin: const EdgeInsets.all(5.0),
-                      alignment: Alignment.center,
-                      decoration: BoxDecoration(
-                          color: primarySwatchColor,
-                          borderRadius: BorderRadius.circular(20.0)),
-                      child: Text(date.day.toString(),
-                          style: const TextStyle(color: whiteColor))),
-                  todayBuilder: (context, date, events) => Container(
-                      margin: const EdgeInsets.all(5.0),
-                      alignment: Alignment.center,
-                      decoration: BoxDecoration(
-                          color: primarySwatchColor,
-                          borderRadius: BorderRadius.circular(20.0)),
-                      child: Text(date.day.toString(),
-                          style: const TextStyle(color: whiteColor)))),
+              daysOfWeekStyle: _daysOfWeekStyle(),
+              calendarStyle: _calendarStyle(),
+              calendarBuilders: _calendarBuilders(),
               startingDayOfWeek: StartingDayOfWeek.monday,
               currentDay: controller.focusedDay,
               focusedDay: controller.focusedDay,
@@ -63,14 +33,7 @@ class MyCalendarPage extends GetView<MyCalendarController> {
               calendarFormat: CalendarFormat.month,
               sixWeekMonthsEnforced: false,
               shouldFillViewport: false,
-              headerStyle: HeaderStyle(
-                  formatButtonVisible: false,
-                  titleTextStyle: Get.textTheme.bodyText2!.merge(
-                      const TextStyle(
-                          color: whiteColor,
-                          fontWeight: FontWeight.normal,
-                          fontSize: 18)),
-                  titleCentered: true),
+              headerStyle: _headerStyle(),
               onDaySelected: (selectedDay, focusedDay) {
                 controller.setFocusedDay(selectedDay);
               },
@@ -145,4 +108,45 @@ class MyCalendarPage extends GetView<MyCalendarController> {
                     padding: EdgeInsets.all(8.0),
                     child: Icon(Icons.chevron_right))
               ]))));
+
+  _daysOfWeekStyle() => const DaysOfWeekStyle(
+      weekdayStyle: TextStyle(color: primarySwatchColor),
+      weekendStyle: TextStyle(color: primarySwatchColor));
+
+  _headerStyle() => HeaderStyle(
+      formatButtonVisible: false,
+      titleTextStyle: Get.textTheme.bodyText2!.merge(const TextStyle(
+          color: whiteColor, fontWeight: FontWeight.normal, fontSize: 18)),
+      titleCentered: true);
+
+  //Event marker decoration markerDecoration
+  _calendarStyle() => CalendarStyle(
+      markerDecoration: BoxDecoration(
+          color: primarySwatchColor, borderRadius: BorderRadius.circular(12.0)),
+      todayTextStyle: const TextStyle(
+          fontFamily: 'Poppins',
+          color: whiteColor,
+          fontWeight: FontWeight.normal),
+      defaultTextStyle: const TextStyle(
+          fontFamily: 'Poppins',
+          fontWeight: FontWeight.normal,
+          color: whiteColor));
+
+  _calendarBuilders() => CalendarBuilders(
+      selectedBuilder: (context, date, events) => Container(
+          margin: const EdgeInsets.all(5.0),
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+              color: primarySwatchColor,
+              borderRadius: BorderRadius.circular(20.0)),
+          child: Text(date.day.toString(),
+              style: const TextStyle(color: whiteColor))),
+      todayBuilder: (context, date, events) => Container(
+          margin: const EdgeInsets.all(5.0),
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+              color: primarySwatchColor,
+              borderRadius: BorderRadius.circular(20.0)),
+          child: Text(date.day.toString(),
+              style: const TextStyle(color: whiteColor))));
 }
