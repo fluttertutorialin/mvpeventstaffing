@@ -191,8 +191,8 @@ class EventDetailPage extends StatelessWidget {
                                 style: Get.textTheme.bodyText1!.merge(
                                     const TextStyle(
                                         color: primarySwatchColor,
-                                        fontSize: 14))))),
-                  ])),
+                                        fontSize: 14)))))
+                  ]))
         ])));
   }
 }
