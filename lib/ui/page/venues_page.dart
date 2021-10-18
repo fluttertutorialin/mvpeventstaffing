@@ -49,7 +49,7 @@ class VenuesPage extends StatelessWidget {
                     ]),
                 Row(children: [
                   const Flexible(
-                      child: TextFieldComponent(labelText: searchHintString)),
+                      child: TextFieldComponent(labelText: searchVenuesHintString)),
                   const SizedBox(width: 15),
                   InkWell(
                       onTap: () {
@@ -84,8 +84,10 @@ class VenuesPage extends StatelessWidget {
           padding: const EdgeInsets.all(10),
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            GestureDetector(
-                onTap: () {},
+            InkWell(
+                onTap: () {
+                  Get.toNamed(eventDetailRoute);
+                },
                 child: ClipRRect(
                     borderRadius: const BorderRadius.only(
                         topLeft: Radius.circular(15),
