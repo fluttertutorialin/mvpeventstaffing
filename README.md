@@ -9,24 +9,28 @@
 **www.fluttertutorial.in provides free UI Kit and youtube video [Open link](https://www.youtube.com/watch?v=5wPts2eIfF4)**
 
 <p align="center">
-  <img alt="" src="screenshot\mvpevent_1.png" width="180"/>
-  <img alt="" src="screenshot\mvpevent_2.png" width="180"/>
-  <img alt="" src="screenshot\mvpevent_3.png" width="180"/>
-  <img alt="" src="screenshot\mvpevent_4.png" width="180"/>
-  <img alt="" src="screenshot\mvpevent_5.png" width="180"/>
-  <img alt="" src="screenshot\mvpevent_6.png" width="180"/>
-  <img alt="" src="screenshot\mvpevent_7.png" width="180"/>
-  <img alt="" src="screenshot\mvpevent_8.png" width="180"/>
-  <img alt="" src="screenshot\mvpevent_9.png" width="180"/>
-  <img alt="" src="screenshot\mvpevent_10.png" width="180"/>
-  <img alt="" src="screenshot\mvpevent_11.png" width="180"/>
-  <img alt="" src="screenshot\mvpevent_12.png" width="180"/>
-  <img alt="" src="screenshot\mvpevent_13.png" width="180"/>
-  <img alt="" src="screenshot\mvpevent_14.png" width="180"/>
-  <img alt="" src="screenshot\mvpevent_15.png" width="180"/>
-  <img alt="" src="screenshot\mvpevent_16.png" width="180"/>
-  <img alt="" src="screenshot\mvpevent_17.png" width="180"/>
-  <img alt="" src="screenshot\mvpevent_18.png" width="180"/>
+  <img alt="" src="screenshot\device-2021-10-18-004219.png" width="180"/>
+  <img alt="" src="screenshot\device-2021-10-18-004230.png" width="180"/>
+  <img alt="" src="screenshot\device-2021-10-18-004240.png" width="180"/>
+  <img alt="" src="screenshot\device-2021-10-18-004249.png" width="180"/>
+  <img alt="" src="screenshot\device-2021-10-18-004305.png" width="180"/>
+  <img alt="" src="screenshot\device-2021-10-18-004315.png" width="180"/>
+  <img alt="" src="screenshot\device-2021-10-18-004331.png" width="180"/>
+  <img alt="" src="screenshot\device-2021-10-18-004343.png" width="180"/>
+  <img alt="" src="screenshot\device-2021-10-18-004352.png" width="180"/>
+  <img alt="" src="screenshot\device-2021-10-18-004401.png" width="180"/>
+  <img alt="" src="screenshot\device-2021-10-18-004410.png" width="180"/>
+  <img alt="" src="screenshot\device-2021-10-18-004418.png" width="180"/>
+  <img alt="" src="screenshot\device-2021-10-18-004429.png" width="180"/>
+  <img alt="" src="screenshot\device-2021-10-18-004438.png" width="180"/>
+  <img alt="" src="screenshot\device-2021-10-18-004446.png" width="180"/>
+  <img alt="" src="screenshot\device-2021-10-18-004457.png" width="180"/>
+  <img alt="" src="screenshot\device-2021-10-18-004506.png" width="180"/>
+  <img alt="" src="screenshot\device-2021-10-18-004514.png" width="180"/>
+  <img alt="" src="screenshot\device-2021-10-18-004525.png" width="180"/>
+  <img alt="" src="screenshot\device-2021-10-18-004534.png" width="180"/>
+  <img alt="" src="screenshot\device-2021-10-18-004544.png" width="180"/>
+  <img alt="" src="screenshot\device-2021-10-18-004555.png" width="180"/>
 </p>
 
 # APPLICATION FUNCTIONALITY
