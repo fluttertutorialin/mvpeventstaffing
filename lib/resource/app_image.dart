@@ -6,3 +6,4 @@ const otpSuccessImage = '${assetImage}success.png';
 const profilePictureImage = '${assetImage}profile_picture.png';
 const pendingImage = '${assetImage}pending.png';
 const filterImage = '${assetImage}filter.png';
+const noEventImage = '${assetImage}no_event.png';

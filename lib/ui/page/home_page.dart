@@ -101,7 +101,8 @@ class HomePage extends StatelessWidget {
                                                                           15)),
                                                               child: Center(
                                                                   child: Image.asset(
-                                                                      pendingImage,
+                                                                      noEventImage,
+                                                                      width: Get.width,
                                                                       height:
                                                                           120,
                                                                       fit: BoxFit
