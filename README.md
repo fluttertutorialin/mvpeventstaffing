@@ -50,5 +50,45 @@
     2) CustomListViewBuilder is custom widget<br>
 </h6>
 
+# DYNAMIC JSON KEY
+<h6>
+{
+    "success": true,
+    "data": {
+        "ones": [{
+                "id": "2",
+                "username": "LM10002"
+            },
+            {
+                "id": "6",
+                "username": "LM10006"
+            }
+        ],
+        "twos": [{
+                "id": "3",
+                "username": "LM10003"
+            },
+            {
+                "id": "8",
+                "username": "LM10008"
+            }
+        ],
+        "threes": [{
+            "id": "4",
+            "username": "LM10004"
+        }],
+        "fours": [{
+                "id": "5",
+                "username": "LM10005"
+            },
+            {
+                "id": "14",
+                "username": "GT10014"
+            }
+        ]
+    }
+}
+</h6>
+
 # Live preview
 https://www.youtube.com/watch?v=jh6_9JhPL3E
