@@ -1,6 +1,5 @@
 import 'dart:convert';
-import 'package:mvpeventstaffing/model/user_detail.dart';
-
+import '../model/user_detail.dart';
 import '../model/user_data_response.dart';
 
 main() {

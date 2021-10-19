@@ -1,5 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:mvpeventstaffing/model/user_detail.dart';
+import 'user_detail.dart';
 part 'user_data_response.g.dart';
 
 @JsonSerializable(includeIfNull: true)
