@@ -5,7 +5,7 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.14.2 <3.0.0"
 
 dependencies:
   flutter:
@@ -20,11 +20,15 @@ dependencies:
   google_fonts:
   table_calendar:
   intl:
+  json_annotation:
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  json_serializable:
+  build_runner:
   flutter_lints: ^1.0.0
 
 flutter:
