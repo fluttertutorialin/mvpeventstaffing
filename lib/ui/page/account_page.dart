@@ -76,26 +76,30 @@ class AccountPage extends StatelessWidget {
                   ])),
               const SizedBox(height: 25),
               _menuWidget(
-                  name: 'My Calendar',
+                  name: myCalendarTitleString,
                   onPress: () {
                     Get.toNamed(myCalendarRoute);
                   }),
               const SizedBox(height: 10),
               _menuWidget(
-                  name: 'My Job Preferences',
+                  name: jobPreferencesTitleString,
                   onPress: () {
                     Get.toNamed(profileJobSettingRoute);
                   }),
               const SizedBox(height: 10),
-              _menuWidget(name: 'My Venues'),
+              _menuWidget(
+                  name: myVenuesTitleString,
+                  onPress: () {
+                    Get.toNamed(venuesLikeRoute);
+                  }),
               const SizedBox(height: 10),
-              _menuWidget(name: 'Help & Support'),
+              _menuWidget(name: 'Help & Support', onPress: () {}),
               const SizedBox(height: 10),
-              _menuWidget(name: 'About Us'),
+              _menuWidget(name: 'About Us', onPress: () {}),
               const SizedBox(height: 10),
-              _menuWidget(name: 'Privacy Policy'),
+              _menuWidget(name: 'Privacy Policy', onPress: () {}),
               const SizedBox(height: 10),
-              _menuWidget(name: 'Terms & Conditions'),
+              _menuWidget(name: 'Terms & Conditions', onPress: () {}),
               const SizedBox(height: 10),
               _menuWidget(
                   name: 'Logout',

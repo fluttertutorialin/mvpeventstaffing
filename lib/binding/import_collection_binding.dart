@@ -6,3 +6,4 @@ export 'forgot_password_binding.dart';
 export 'bottom_navigation_binding.dart';
 export 'profile_edit_binding.dart';
 export 'my_calendar_binding.dart';
+export 'venues_like_binding.dart';

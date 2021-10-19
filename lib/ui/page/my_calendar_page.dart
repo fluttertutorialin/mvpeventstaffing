@@ -4,6 +4,7 @@ import 'package:table_calendar/table_calendar.dart';
 import '../../controller/import_collection_controller.dart';
 import '../../resource/app_color.dart';
 import '../widget/event_upcoming_item_view.dart';
+import '../../resource/app_value.dart';
 
 class MyCalendarPage extends GetView<MyCalendarController> {
   const MyCalendarPage({Key? key}) : super(key: key);
@@ -15,7 +16,7 @@ class MyCalendarPage extends GetView<MyCalendarController> {
         appBar: AppBar(
             elevation: 1,
             backgroundColor: backgroundColor.withOpacity(0.9),
-            title: Text('My Calendar',
+            title: Text(myCalendarTitleString,
                 style: Get.textTheme.bodyText1!
                     .merge(const TextStyle(color: whiteColor, fontSize: 18)))),
         body: Column(children: [

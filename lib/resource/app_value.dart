@@ -69,6 +69,8 @@ const String eventsTitleString = 'Events';
 const String accountTitleString = 'Account';
 const String notificationTitleString  = 'Notification';
 const String profileEditTitleString  = 'Profile Edit';
+const String myVenuesTitleString  = 'My Venues';
+const String myCalendarTitleString  = 'My Calendar';
 
 const String loginButtonString = 'Login';
 const String signUpButtonString  = 'Sign Up';
@@ -97,7 +99,7 @@ const String birthDateHintString = 'Birth date';
 const String instagramNameHintString ='Instagram name';
 const String facebookNameHintString = 'Facebook name';
 const String emergencyContactHintString = 'spouse, friend, etc.';
-const String emergencyContactPhoneHintStep = '(###) ###-####';
+const String emergencyContactPhoneHintStep = '';
 const String chooseFileHintString = 'choose file';
 const String searchHintString = 'Search events';
 const String searchVenuesHintString = 'Search venues';

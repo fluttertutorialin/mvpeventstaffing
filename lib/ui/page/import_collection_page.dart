@@ -20,3 +20,4 @@ export 'notification_page.dart';
 export 'profile_edit_page.dart';
 export 'event_detail_page.dart';
 export 'my_calendar_page.dart';
+export 'venues_like_page.dart';

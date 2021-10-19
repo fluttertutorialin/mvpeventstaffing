@@ -63,5 +63,9 @@ abstract class AppPage {
         binding: MyCalendarBinding(),
         page: () => const MyCalendarPage()),
 
+    GetPage(
+        name: venuesLikeRoute,
+        binding: VenuesLikeBinding(),
+        page: () => const VenuesLikePage()),
   ];
 }
