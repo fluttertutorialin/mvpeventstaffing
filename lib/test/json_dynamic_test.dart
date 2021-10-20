@@ -1,6 +1,6 @@
 import 'dart:convert';
-import '../entity/user_detail.dart';
-import '../entity/user_data_response.dart';
+import '../entity/user_data/user_detail.dart';
+import '../entity/user_data/user_data_response.dart';
 
 main() {
   String json = '''

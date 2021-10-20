@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jdkgroup.mvpeventstaffing">
    <application
-        android:label="mvpeventstaffing"
+        android:label="MVP Event Staffing"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
