@@ -28,7 +28,7 @@ main(){
 }
   ''';
 
-  StateCityEntity stateCityEntity = StateCityEntity.fromJson(jsonDecode(json));
+  var stateCityEntity = StateCityEntity.fromJson(jsonDecode(json));
   stateCityEntity.stateCityList!.forEach((key, value) {
     print('$key ${value.length}');
   });
