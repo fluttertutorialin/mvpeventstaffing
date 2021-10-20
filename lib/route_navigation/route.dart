@@ -20,3 +20,4 @@ const String profileJobSettingRoute = '/ProfileJobSettingPage';
 const String eventDetailRoute = '/eventDetail';
 const String myCalendarRoute = '/myCalendar';
 const String venuesLikeRoute = '/venuesLike';
+const String webViewRoute = '/webView';

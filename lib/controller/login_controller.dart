@@ -2,7 +2,11 @@ import 'package:get/get.dart';
 
 class LoginController extends GetxController{
 
-  loginFetch(){
+  /*loginValidation(){
+
+  }
+
+  _loginFetch(){
 
   }
 
@@ -12,5 +16,5 @@ class LoginController extends GetxController{
 
   _loginSuccessNavigation(){
 
-  }
+  }*/
 }

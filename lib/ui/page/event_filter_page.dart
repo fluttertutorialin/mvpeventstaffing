@@ -20,7 +20,7 @@ class EventFilterPage extends StatelessWidget {
                       Center(
                           child: Padding(
                               padding: const EdgeInsets.all(5),
-                              child: Text('Sort and Filter',
+                              child: Text(sortAndFilterTitleString,
                                   style: Get.textTheme.headline1!.merge(
                                       const TextStyle(
                                           color: whiteColor,
@@ -94,6 +94,27 @@ class EventFilterPage extends StatelessWidget {
                               Icon(Icons.arrow_drop_down_circle_outlined),
                           enabled: false),
                       const SizedBox(height: 10),
+                      InkWell(
+                          onTap: () {
+                            Get.back();
+                          },
+                          child: Container(
+                              padding: const EdgeInsets.symmetric(
+                                  vertical: 12),
+                              alignment: Alignment.center,
+                              decoration: BoxDecoration(
+                                  borderRadius:
+                                  const BorderRadius.all(
+                                      Radius.circular(5)),
+                                  gradient: buttonGradient),
+                              child: Text(
+                                  filterButtonString,
+                                  style: Get.textTheme.subtitle2!
+                                      .merge(const TextStyle(
+                                      color: whiteColor,
+                                      fontWeight:
+                                      FontWeight.normal,
+                                      fontSize: 18))))),
                     ]))));
   }
 }

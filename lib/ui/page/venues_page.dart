@@ -26,7 +26,7 @@ class VenuesPage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      Text(eventsTitleString,
+                      Text(venuesTitleString,
                           style: Get.textTheme.bodyText1!.merge(const TextStyle(
                               color: whiteColor, fontSize: 18))),
                       const Spacer(),

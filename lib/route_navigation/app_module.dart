@@ -67,5 +67,10 @@ abstract class AppPage {
         name: venuesLikeRoute,
         binding: VenuesLikeBinding(),
         page: () => const VenuesLikePage()),
+
+    GetPage(
+        name: webViewRoute,
+        binding: WebViewBinding(),
+        page: () => const WebViewPage()),
   ];
 }

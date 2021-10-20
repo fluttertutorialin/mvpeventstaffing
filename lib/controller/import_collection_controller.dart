@@ -7,3 +7,4 @@ export 'bottom_navigation_controller.dart';
 export 'profile_edit_controller.dart';
 export 'my_calendar_controller.dart';
 export 'venues_like_controller.dart';
+export 'web_view_controller.dart';

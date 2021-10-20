@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../../entity/argument/web_view_argument.dart';
 import '../../route_navigation/route.dart';
 import '../../resource/app_value.dart';
 import '../../resource/app_color.dart';
@@ -63,7 +64,7 @@ class AccountPage extends StatelessWidget {
                           InkWell(
                               child: Padding(
                                   padding: const EdgeInsets.all(5),
-                                  child: Text('Profile Edit',
+                                  child: Text(profileEditTitleString,
                                       style: Get.textTheme.headline1!.merge(
                                           const TextStyle(
                                               color: primarySwatchColor,
@@ -93,16 +94,41 @@ class AccountPage extends StatelessWidget {
                     Get.toNamed(venuesLikeRoute);
                   }),
               const SizedBox(height: 10),
-              _menuWidget(name: 'Help & Support', onPress: () {}),
-              const SizedBox(height: 10),
-              _menuWidget(name: 'About Us', onPress: () {}),
-              const SizedBox(height: 10),
-              _menuWidget(name: 'Privacy Policy', onPress: () {}),
-              const SizedBox(height: 10),
-              _menuWidget(name: 'Terms & Conditions', onPress: () {}),
+              _menuWidget(
+                  name: helpAndSupportTitleString,
+                  onPress: () {
+                    Get.toNamed(webViewRoute,
+                        arguments: WebViewArgument(
+                            title: helpAndSupportTitleString, webViewUrl: ''));
+                  }),
               const SizedBox(height: 10),
               _menuWidget(
-                  name: 'Logout',
+                  name: aboutUsTitleString,
+                  onPress: () {
+                    Get.toNamed(webViewRoute,
+                        arguments: WebViewArgument(
+                            title: aboutUsTitleString, webViewUrl: ''));
+                  }),
+              const SizedBox(height: 10),
+              _menuWidget(
+                  name: privacyPolicyTitleString,
+                  onPress: () {
+                    Get.toNamed(webViewRoute,
+                        arguments: WebViewArgument(
+                            title: privacyPolicyTitleString, webViewUrl: ''));
+                  }),
+              const SizedBox(height: 10),
+              _menuWidget(
+                  name: termsAndConditionsTitleString,
+                  onPress: () {
+                    Get.toNamed(webViewRoute,
+                        arguments: WebViewArgument(
+                            title: termsAndConditionsTitleString,
+                            webViewUrl: ''));
+                  }),
+              const SizedBox(height: 10),
+              _menuWidget(
+                  name: logoutTitleString,
                   onPress: () {
                     Get.offAllNamed(loginRoute);
                   })

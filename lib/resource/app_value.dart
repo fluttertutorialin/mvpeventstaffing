@@ -66,11 +66,18 @@ const String submittedTitle = 'Submitted';
 const String pendingApprovalString = 'Application Is \n Pending Approval';
 const String homeTitleString = 'Home';
 const String eventsTitleString = 'Events';
+const String venuesTitleString = 'Venues';
 const String accountTitleString = 'Account';
 const String notificationTitleString  = 'Notification';
 const String profileEditTitleString  = 'Profile Edit';
 const String myVenuesTitleString  = 'My Venues';
 const String myCalendarTitleString  = 'My Calendar';
+const String helpAndSupportTitleString = 'Help & Support';
+const String aboutUsTitleString = 'About Us';
+const String privacyPolicyTitleString = 'Privacy Policy';
+const String termsAndConditionsTitleString = 'Terms & Conditions';
+const String logoutTitleString = 'Logout';
+const String sortAndFilterTitleString = 'Sort and Filter';
 
 const String loginButtonString = 'Login';
 const String signUpButtonString  = 'Sign Up';
@@ -87,6 +94,7 @@ const String updateProfileButtonString = 'Update Profile';
 const String updateButtonString = 'Update';
 const String updateMyAvailabilityButtonString = 'Update My Availability';
 const String saveAvailabilityButtonString = 'Save Availability';
+const String filterButtonString = 'Filter';
 
 const String emailHintString = 'Email';
 const String passwordHintString = 'Password';
