@@ -46,6 +46,14 @@ class EventDetailPage extends StatelessWidget {
                                                 fontSize: 14,
                                                 fontWeight: FontWeight.w600))),
                                     const SizedBox(height: 20),
+                                    Text('Select the Job you are interested in',
+                                        style: Get.textTheme.headline1!.merge(
+                                            const TextStyle(
+                                                color: whiteColor,
+                                                fontSize: 15,
+                                                fontWeight: FontWeight.w600))),
+
+                                    const SizedBox(height: 20),
                                     Text(writeNote,
                                         style: Get.textTheme.headline1!.merge(
                                             const TextStyle(
